@@ -27,6 +27,7 @@ URL Muestra : http://carloslever.gt.tc/gestionInv
 **Script Creacion base de datos**
 -cambiar 'gestion_inventario_colegio' por el nombre de la base de datos creada.
 
+```sql
 CREATE DATABASE IF NOT EXISTS `gestion_inventario_colegio` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
 USE `gestion_inventario_colegio`;
 
