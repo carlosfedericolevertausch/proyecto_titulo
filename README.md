@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `activos_tecnologicos` (
   FOREIGN KEY (`dependencia_id`) REFERENCES `dependencias`(`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   FOREIGN KEY (`responsable_usuario_id`) REFERENCES `usuarios`(`id`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
-
+```
 **Script Creacion de datos de prueba**
 
 ```sql
@@ -161,3 +161,4 @@ INSERT INTO `activos_tecnologicos` (`id`, `codigo_unico`, `colegio_id`, `categor
 (8, 'ACT-12345-2026-B108', 1, 5, 2, 'Impresora Multifuncional HP LaserJet Pro MFP M428fdw', 'HP', 'LaserJet Pro MFP M428fdw', 'SN-HP-332901', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'Gigabit Ethernet, WiFi Dual Band', NULL, 'Sala de Profesores', 'presencial', 3, 'operativo', '2023-09-12', '2025-09-12', 'Ofimax Chile Ltda', 'Impresora multifuncional láser monocromática de red dúplex'),
 (9, 'ACT-12345-2026-B109', 1, 4, 1, 'Access Point Ubiquiti UniFi AP AC Pro', 'Ubiquiti', 'UAP-AC-PRO', 'SN-UB-449102', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'Gigabit Ethernet PoE, Wi-Fi 5', NULL, 'Redes e Infraestructura', 'presencial', 2, 'operativo', '2024-01-15', '2026-01-15', 'Redes y Telecomunicaciones Chile', 'Punto de acceso WiFi de alta densidad montado en techo');
 
+```
