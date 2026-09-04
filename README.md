@@ -149,7 +149,7 @@ INSERT INTO `dependencias` (`id`, `colegio_id`, `nombre`, `ubicacion`) VALUES
 (3, 1, 'Biblioteca CRA', 'Piso 1, Ala Sur'),
 (4, 2, 'Laboratorio Enlaces', 'Piso 2');
 
--- Amplio Inventario Tecnológico Semill
+-- Activos tecnologicos
 INSERT INTO `activos_tecnologicos` (`id`, `codigo_unico`, `colegio_id`, `categoria_id`, `dependencia_id`, `nombre`, `marca`, `modelo`, `numero_serie`, `nombre_equipo_so`, `procesador`, `memoria_ram`, `almacenamiento`, `sistema_operativo`, `estado_licencia`, `resolucion_nativa`, `lumens`, `horas_lampara`, `conectividad`, `accesorios`, `departamento_area`, `modalidad_ubicacion`, `responsable_usuario_id`, `estado_activo`, `fecha_adquisicion`, `fecha_vencimiento_garantia`, `proveedor_compra`, `observaciones`) VALUES
 (1, 'ACT-12345-2026-A101', 1, 1, 1, 'Notebook Lenovo ThinkPad E14', 'Lenovo', 'ThinkPad E14 Gen 4', 'SN-LN-998231', 'PC-LAB-01', 'Intel Core i5-1235U', '16 GB DDR4', '512 GB SSD NVMe', 'Windows 11 Pro', 'Original Activada', NULL, NULL, 0, NULL, NULL, 'Departamento de Informática', 'presencial', 2, 'operativo', '2024-03-15', '2027-03-15', 'Lenovo Chile SpA', 'Equipo asignado al laboratorio principal'),
 (2, 'ACT-12345-2026-A102', 1, 2, 2, 'Proyector Epson PowerLite X49', 'Epson', 'PowerLite X49', 'SN-EP-334120', NULL, NULL, NULL, NULL, NULL, NULL, '1024x768 XGA', '3600 ANSI Lúmenes', 350, 'HDMI, VGA, USB', 'Control remoto y cable HDMI 5m', 'Unidad Técnico Pedagógica', 'presencial', 3, 'operativo', '2023-08-10', '2025-08-10', 'Suministros Educación Ltda', 'Montado en soporte de techo'),
