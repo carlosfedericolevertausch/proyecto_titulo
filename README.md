@@ -1,6 +1,5 @@
 # Proyecto de Titulo
-## CFTCENCO
-# Sistema de Inventario Tecnológico Escolar (GobCL)
+# Sistema de Inventario Tecnológico Escolar
 
 Sistema desarrollado en PHP 8.x, Bootstrap 5, SweetAlert2 y MySQL para la administración y trazabilidad descentralizada de activos tecnológicos escolares por colegio en Chile, adhiriendo a los lineamientos gráficos institucionales del Gobierno de Chile.
 
