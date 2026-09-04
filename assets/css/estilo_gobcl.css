@@ -1,0 +1,192 @@
+/* ==========================================================================
+   ESTILOS INSTITUCIONALES SIMPLIFICADOS - GOBIERNO DE CHILE (GobCL)
+   Sistema de Inventario Tecnológico Escolar
+   ========================================================================== */
+
+:root {
+  --gob-azul-oscuro: #003b66;
+  --gob-azul-primario: #0f69b4;
+  --gob-azul-hover: #094f8a;
+  --gob-rojo: #eb3c46;
+  --gob-gris-fondo: #f8f9fa;
+  --gob-gris-borde: #e9ecef;
+  --gob-texto: #2b303a;
+  --gob-texto-suave: #6c757d;
+  --gob-fuente: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  font-family: var(--gob-fuente);
+  background-color: var(--gob-gris-fondo);
+  color: var(--gob-texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- BARRA SUPERIOR INSTITUCIONAL --- */
+.top-gob-stripe {
+  height: 5px;
+  background: linear-gradient(90deg, var(--gob-rojo) 0%, var(--gob-rojo) 30%, var(--gob-azul-primario) 30%, var(--gob-azul-oscuro) 100%);
+}
+
+.navbar-gobcl {
+  background-color: var(--gob-azul-oscuro);
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.navbar-gobcl .navbar-brand {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.navbar-gobcl .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding: 0.4rem 0.8rem !important;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.navbar-gobcl .nav-link:hover,
+.navbar-gobcl .nav-link.active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* --- TARJETAS LIMPIAS --- */
+.card-gobcl {
+  border: 1px solid var(--gob-gris-borde);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.card-gobcl .card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--gob-gris-borde);
+  color: var(--gob-azul-oscuro);
+  font-weight: 700;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* --- BOTONES INSTITUCIONALES --- */
+.btn-gob-primario {
+  background-color: var(--gob-azul-primario);
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background-color 0.15s ease;
+}
+
+.btn-gob-primario:hover {
+  background-color: var(--gob-azul-hover);
+  color: #ffffff;
+}
+
+/* --- KPI CARDS SIMPLIFICADAS --- */
+.kpi-card {
+  border: 1px solid var(--gob-gris-borde);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.kpi-card:hover {
+  border-color: var(--gob-azul-primario);
+}
+
+.kpi-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.kpi-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 0.2rem;
+}
+
+.kpi-label {
+  font-size: 0.82rem;
+  color: var(--gob-texto-suave);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+
+/* --- ETIQUETAS DE ESTADO (BADGES SUAVES) --- */
+.badge-estado {
+  font-size: 0.78rem;
+  padding: 0.3em 0.65em;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.badge-operativo { background-color: #e6f4ea; color: #137333; }
+.badge-regular { background-color: #e8f0fe; color: #1a73e8; }
+.badge-con_falla { background-color: #fef7e0; color: #b06000; }
+.badge-en_reparacion { background-color: #ffe8d6; color: #d9480f; }
+.badge-dado_de_baja { background-color: #fce8e6; color: #c5221f; }
+
+/* --- PERFILES BADGES --- */
+.badge-perfil-administrador { background-color: #e8f0fe; color: #1a73e8; }
+.badge-perfil-colaborador { background-color: #f3e8ff; color: #6b21a8; }
+.badge-perfil-profesor { background-color: #e6f4ea; color: #137333; }
+.badge-perfil-alumno { background-color: #f1f3f4; color: #5f6368; }
+
+/* --- CÓDIGO ÚNICO INSIGNIA LIMPIA --- */
+.codigo-unico {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 600;
+  font-size: 0.82rem;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+}
+
+/* --- TABLAS LIMPIAS --- */
+.table > :not(caption) > * > * {
+  padding: 0.75rem 1rem;
+  border-bottom-color: var(--gob-gris-borde);
+}
+
+.table-light {
+  background-color: #f8fafc;
+  color: #475569;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+/* --- FOOTER --- */
+footer.footer-gobcl {
+  margin-top: auto;
+  background-color: #ffffff;
+  color: var(--gob-texto-suave);
+  font-size: 0.82rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--gob-gris-borde);
+}
